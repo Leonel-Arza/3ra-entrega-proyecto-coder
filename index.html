@@ -1,161 +1,315 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./img/logo.png">
-    <title>Odontologia Integral</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo 3.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Odontologia Integral</title>
 </head>
 
 <body>
 
     <header>
 
-        <div>
-            <h1 id="titulo">Odontologia Integral</h1>
+        <div class="titulo">
+            <h1>Odontologia Integral</h1>
         </div>
 
-        <div>
-            <nav>
-                <a href="index.html">Inicio</a>
-                <a href="./pages/imagenes.html">Galeria de Imagenes</a>
-                <a href="./pages/videos.html">Videos</a>
-                <a href="./pages/mapa.html">Encuentranos</a>
-                <a href="./pages/WhatsApp.html"><button class="btn">Solicitar Turno</button> </a>
-            </nav>
+        <div class="logo-pagina">
+            <a href="./index.html"><img src="./img/pngwing.com.png" alt=""></a>
         </div>
+
+        <nav class="navbar navbar-expand-md bg-body-$bg-color: lavenderblush">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/imagenes.html">Galeria de Imagenes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/videos.html">Videos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/mapa.html">Encuentranos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/whatsapp.html">Solicitar Turno</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
 
     </header>
 
+    <main>
+
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="./img/apiñamiento.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./img/ortodoncia-invisible.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./img/carilla-dental.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./img/carilla-dental2.jpeg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
         <div>
             <section>
-                <h2><strong class=""><u>Servicios</u></strong> </h2>
+                <h2 class="primer-titulo">Servicios:</h2>
             </section>
         </div>
 
-        <div>
-            <section class="">
-                <ul class="">
-                    <li>
-                        <h4>Protesis </h4>
-                    </li>
-                    <li>
-                        <h4>Blanqueamientos</h4>
-                    </li>
-                    <li>
-                        <h4>Limpiezas</h4>
-                    </li>
-                    <li>
-                        <h4>Extracciones</h4>
-                    </li>
-                    <li>
-                        <h4>Arreglos</h4>
-                    </li>
-                    <li>
-                        <h4> Ortodoncia</h4>
-                        </article>
-                    </li>
+        <div class="tratamientos">
+            <ul>
+                <li>Protesis</li>
+                <li>Blanqueamientos</li>
+                <li>Limpiezas</li>
+                <li>Extracciones</li>
+                <li>Arreglos</li>
+                <li>Ortodoncia</li>
+                <li>Placa de Bruxismo</li>
+            </ul>
+        </div>
+
+        <div class="images">
+            <img data-aos="flip-up" data-aos-easing="ease-in-out-sine" data-aos-duration="1000" src="./img/protesis.jpg"
+                alt="">
+            <img data-aos="flip-up" data-aos-easing="ease-in-out-sine" data-aos-duration="1000"
+                src="./img/blanqueamiento-dental.jpeg" alt="">
+            <img data-aos="flip-up" data-aos-easing="ease-in-out-sine" data-aos-duration="1000" src="./img/limpieza.jpg"
+                alt="">
+            <img data-aos="flip-up" data-aos-easing="ease-in-out-sine" data-aos-duration="1000"
+                src="./img/extraccion1.jpg" alt="">
+            <img data-aos="flip-up" data-aos-easing="ease-in-out-sine" data-aos-duration="1000" src="./img/arreglo.jpg"
+                alt="">
+            <img data-aos="flip-up" data-aos-easing="ease-in-out-sine" data-aos-duration="1000"
+                src="./img/ortodoncia.jpg" alt="">
+            <img data-aos="flip-up" data-aos-easing="ease-in-out-sine" data-aos-duration="1000"
+                src="./img/placa-brux.jpg" alt="">
+            <img data-aos="flip-up" data-aos-easing="ease-in-out-sine" data-aos-duration="1000"
+                src="./img/implantes.jpg" alt="">
+        </div>
+
+        <hr>
+
+        <div class="acerca" data-aos="zoom-in">
+            <div class="acerca-titulo">
+                <h2>Sobre Nosotros:</h2>
+            </div>
+
+            <div class="acerca-de">
+                <p>¡Bienvenidos a nuestro consultorio odontológico de confianza! En Odontologia Integral, nos
+                    enorgullece
+                    ofrecerle una atención dental integral y de calidad para el cuidado de su sonrisa. Nuestro
+                    dedicado
+                    equipo de profesionales está comprometido con su bienestar oral y se esfuerza por brindarle una
+                    experiencia dental cómoda y positiva.</p>
+                <p>
+                    Comprendemos que cada paciente es único y tiene necesidades dentales específicas.
+                    Nuestro enfoque personalizado nos permite diseñar planes de tratamiento adaptados a sus
+                    necesidades
+                    individuales. Ya sea que requiera una limpieza y revisión de rutina, un tratamiento de
+                    ortodoncia o
+                    cualquier otro procedimiento dental, estamos aquí para ayudarlo a alcanzar una sonrisa saludable
+                    y
+                    radiante.
+                </p>
+
+                <p>Nuestra misión es proporcionar un cuidado dental integral que abarque desde la prevención hasta
+                    la
+                    corrección de problemas dentales. Utilizamos las últimas técnicas y tecnologías en odontología
+                    para
+                    garantizar resultados óptimos y brindar una experiencia cómoda y libre de estrés a nuestros
+                    pacientes.
+                </p>
+
+                <p>En Odontologia Integral, nos esforzamos por establecer relaciones de confianza a largo
+                    plazo con nuestros pacientes. Valoramos la comunicación abierta y nos aseguramos de que cada
+                    paciente
+                    reciba
+                    una atención personalizada que se adapte a sus necesidades específicas.
+
+                    Nos complace recibir a nuevos pacientes y estamos comprometidos a proporcionar una experiencia
+                    dental
+                    positiva y satisfactoria. Nuestro consultorio está equipado con instalaciones modernas y cómodas
+                    para
+                    garantizar tu comodidad durante cada visita.
+                <div>
+                    <p>¡Esperamos poder brindarte una sonrisa sana y radiante! Contáctanos hoy mismo para programar
+                        tu
+                        cita
+                        con
+                        nuestro equipo de profesionales dedicados.</p>
+                </div>
+
+                <div class="titulo-servicios">
+                    <h2>Servicios ofrecidos:</h2>
+                </div>
+
+                <div class="servicios-dentales">
+                    <h6>1. Exámenes dentales completos: Realizamos exámenes exhaustivos para evaluar la salud bucal
+                        de
+                        nuestros
+                        pacientes, detectar cualquier problema existente y prevenir complicaciones futuras.</h6>
+
+                    <h6>2. Limpieza y profilaxis: Nuestros higienistas dentales altamente capacitados proporcionan
+                        limpiezas
+                        profesionales para eliminar la placa, el sarro y las manchas, dejando los dientes limpios y
+                        brillantes.
+                    </h6>
+
+                    <h6>3. Tratamientos de restauración: Ofrecemos una amplia gama de opciones de restauración
+                        dental,
+                        incluyendo
+                        empastes, incrustaciones, carillas y coronas, para reparar dientes dañados o decayentes.
+                    </h6>
+
+                    <h6>4. Tratamientos de ortodoncia: Si buscas una sonrisa recta y alineada, nuestros servicios de
+                        ortodoncia
+                        incluyen opciones tradicionales de brackets metálicos, brackets estéticos y alineadores
+                        transparentes
+                        para
+                        corregir la posición de los dientes.</h6>
+
+                    <h6>5. Tratamientos de endodoncia: Nuestros endodoncistas expertos realizan tratamientos de
+                        conducto
+                        radicular
+                        para
+                        salvar dientes infectados o dañados, evitando la necesidad de extracciones.</h6>
+
+                    <h6>6. Implantes dentales: Si has perdido uno o varios dientes, nuestros especialistas en
+                        implantes
+                        dentales
+                        pueden
+                        restaurar tu sonrisa con implantes de alta calidad que se ven y funcionan como dientes
+                        naturales.
+                    </h6>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="place">
+            <h2><u>Donde Nos Encontramos:</u></h2>
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.682693308613!2d-74.24240072436062!3d40.72500117139173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3acc25d12db09%3A0xd7fa4246fd356b3f!2s1234%20Springfield%20Ave%2C%20Irvington%2C%20NJ%2007111%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1688863198248!5m2!1ses-419!2sar"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="datos">
+                <ul>
+                    <li>Av Siempreviva 12345, CP 07111 - Springfield</li>
+                    <li>¿Como llegar?</li>
+                    <li>Colectivos: 278 - 266 - 354 - 506 - 281</li>
+                    <li>Horario de atencion:</li>
+                    <li>Lunes a Viernes: 9:00 a 18:00 hs.</li>
+                    <li>Sabados: 9:00 a 13:00 hs.</li>
                 </ul>
-            </section>
-
+            </div>
         </div>
-    
 
-    <div>
-        <h2 class=""><strong><u>Sobre Nosotros</u></strong></h2>
-
-        <h5>En Odontologia Integral, nos enorgullece brindar atención dental de alta calidad y personalizada para toda
-            la familia. Nuestro equipo de profesionales altamente capacitados está comprometido con la salud bucal y el
-            bienestar de nuestros pacientes. Creemos en la importancia de mantener una sonrisa saludable y hermosa, y
-            nos esforzamos por ofrecer los mejores tratamientos odontológicos en un entorno cálido y acogedor.</h5>
-
-        <h5>Nuestra misión es proporcionar un cuidado dental integral que abarque desde la prevención hasta la
-            corrección de problemas dentales. Utilizamos las últimas técnicas y tecnologías en odontología para
-            garantizar resultados óptimos y brindar una experiencia cómoda y libre de estrés a nuestros pacientes.</h5>
-
-        <h4><u>Servicios ofrecidos:</u></h4>
-
-        <h5>1. Exámenes dentales completos: Realizamos exámenes exhaustivos para evaluar la salud bucal de nuestros
-        pacientes, detectar cualquier problema existente y prevenir complicaciones futuras.</h5>
-
-        <h5>2. Limpieza y profilaxis: Nuestros higienistas dentales altamente capacitados proporcionan limpiezas
-        profesionales para eliminar la placa, el sarro y las manchas, dejando los dientes limpios y brillantes.</h5>
-
-        <h5> Tratamientos de restauración: Ofrecemos una amplia gama de opciones de restauración dental, incluyendo
-        empastes, incrustaciones, carillas y coronas, para reparar dientes dañados o decayentes.</h5>
-
-        <h5>4. Tratamientos de ortodoncia: Si buscas una sonrisa recta y alineada, nuestros servicios de ortodoncia
-        incluyen opciones tradicionales de brackets metálicos, brackets estéticos y alineadores transparentes para
-        corregir la posición de los dientes.</h5>
-
-        <H5>5. Tratamientos de endodoncia: Nuestros endodoncistas expertos realizan tratamientos de conducto radicular para
-        salvar dientes infectados o dañados, evitando la necesidad de extracciones.</H5>
-
-        <h5>6. Implantes dentales: Si has perdido uno o varios dientes, nuestros especialistas en implantes dentales pueden
-        restaurar tu sonrisa con implantes de alta calidad que se ven y funcionan como dientes naturales.</h5>
-
-        <h4>En Odontologia Integral, nos esforzamos por establecer relaciones de confianza a largo
-        plazo con nuestros pacientes. Valoramos la comunicación abierta y nos aseguramos de que cada paciente reciba
-        una atención personalizada que se adapte a sus necesidades específicas.
-
-        Nos complace recibir a nuevos pacientes y estamos comprometidos a proporcionar una experiencia dental
-        positiva y satisfactoria. Nuestro consultorio está equipado con instalaciones modernas y cómodas para
-        garantizar tu comodidad durante cada visita.
-
-        ¡Esperamos poder brindarte una sonrisa sana y radiante! Contáctanos hoy mismo para programar tu cita con
-        nuestro equipo de profesionales dedicados.</h4>
-
-    </div>
-
-    <div>
-        <h2 class=""><u>Donde Nos Encontramos</u></h2>
-        <ul class="">
-            <li>Av Siempreviva 12345, CP 1234 - Springfield</li>
-            <li>¿Como llegar?</li>
-            <li>Colectivos: 278 - 266 - 354 - 506 - 281</li>
-            <li>Horario de atencion:</li>
-            <li>Lunes a Viernes: 9:00 a 18:00 hs.</li>
-            <li>sabados: 9:00 a 13:00 hs.</li>
-        </ul>
-    </div>
+    </main>
 
     <hr>
 
-    <footer class=" ">
-        <div>
-            <form>
-                <h6>Ingresar nombre y apellido para la
-                    consulta, le responderemos a la brevedad:</h6>
-                <input type="text" id="nombre" placeholder="Nombre y apellido">
-                <input type="textarea" id="consulta" placeholder="Escriba aqui su consulta">
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpiar">
-            </form>
+    <footer>
+
+        <div class="titulo-pie">
+            <h2>Seguinos en redes para enterarte las novedades que tenemos sobre nuestros tratamientos!</h2>
         </div>
 
-        <div>
-            <h2><u>Contactanos</u></h2>
+        <form>
+            <input class="cuadro1" type="text" id="nombre" placeholder="Nombre y apellido">
+            <input class="cuadro2" type="textarea" id="consulta" placeholder="Escriba aqui su consulta">
+            <input class="boton1" type="submit" value="Enviar">
+            <input class="boton2" type="reset" value="Limpiar">
+        </form>
+
+        <div class="redes">
+            <div class="logo-instagram">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="./img/logo-nuevo-ig.png" alt="imagen-instagram">
+                </a>
+            </div>
+
+            <div class="logo-whatsapp">
+                <a href="https://www.whatsapp.com/?lang=es" target="_blank">
+                    <img class="logo-whatsapp" src="./img/logo-nuevo-wp.png" alt="imagen whatsapp">
+                </a>
+            </div>
+
+            <div class="logo-twitch">
+                <a href="https://www.twitch.tv/" target="_blank">
+                    <img class="logo-twitch" src="./img/logo-twitch.png" alt="imagen twitch">
+                </a>
+            </div>
+
+            <div class="logo-twitter">
+                <a href="https://twitter.com/" target="_blank">
+                    <img class="logo-twitter" src="./img/logo-nuevo-twitter.png" alt="imagen twitter">
+                </a>
+            </div>
+
+            <div class="logo-youtube">
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img class="logo-youtube" src="./img/logo-nuevo-youtube.png" alt="imagen youtube">
+                </a>
+            </div>
         </div>
 
-        <div>
-            <img src="./img/logo-ig.jpeg" alt="imagen instagram">
-            <p class="logo-ig"><a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
-        </div>
-        <div>
-            <img src="./img/logo-whatsapp.jpeg" alt="imagen whatsapp">
-            <p class="logo-wp"> <a href="https://www.whatsapp.com/?lang=es" target="_blank">WhatsApp</a></p>
-        </div>
-
-        <div class="">
+        <div class="copyright">
             <small>&copy; 2023 ODONTOLOGIA INTEGRAL | Todos los derechos reservados | Desarrollo Web: <b>Leonel
                     Arza</b></small>㊙
         </div>
 
     </footer>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
