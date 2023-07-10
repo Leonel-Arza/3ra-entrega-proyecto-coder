@@ -48,40 +48,14 @@ header nav ul li a:hover {
   background-color: lightcoral;
 }
 
-body {
-  background: linear-gradient(to right, rgb(231, 161, 161), rgb(248, 225, 225), rgb(248, 117, 117));
+@media (min-width: 768px) and (orientation: landscape) {
+  header .titulo h1 {
+    display: block;
+  }
+  header .logo-pagina {
+    display: none;
+  }
 }
-
-.primer-titulo {
-  background-color: lightgray;
-  color: grey;
-  text-align: center;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.tratamientos {
-  background-image: url(../img/Consultorio.jpeg);
-  background-size: cover;
-  object-fit: cover;
-  background-repeat: no-repeat;
-  opacity: 0.7;
-}
-.tratamientos ul li {
-  justify-content: start;
-  border-radius: 40px;
-  color: black;
-  list-style: armenian;
-  padding: 1rem;
-  margin-left: 10px;
-  text-decoration: overline;
-  font-size: medium;
-}
-.tratamientos ul li:hover {
-  background-color: red;
-}
-
 .images {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -157,6 +131,24 @@ body {
   text-align: center;
 }
 
+@media (min-width: 768px) and (orientation: landscape) {
+  .place {
+    display: flex;
+    flex-direction: column;
+    color: black;
+  }
+  .place h2 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .place .mapa {
+    text-align: center;
+  }
+  .place .datos {
+    text-align: center;
+  }
+}
 footer {
   background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(255, 255, 255));
 }
@@ -205,29 +197,125 @@ footer form {
   text-align: center;
 }
 
-@media (min-width: 768px) and (orientation: landscape) {
-  header .titulo h1 {
-    display: block;
-  }
-  header .logo-pagina {
-    display: none;
-  }
-  header .place {
-    display: flex;
-    flex-direction: column;
-    color: black;
-  }
-  header .place h2 {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 30px;
-  }
-  header .place .mapa {
-    text-align: center;
-  }
-  header .place .datos {
-    text-align: center;
-  }
+body {
+  background: linear-gradient(to right, rgb(231, 161, 161), rgb(248, 225, 225), rgb(248, 117, 117));
+}
+
+.primer-titulo {
+  background-color: lightgray;
+  color: grey;
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.tratamientos {
+  background-image: url(../img/Consultorio.jpeg);
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+}
+.tratamientos ul li {
+  justify-content: start;
+  border-radius: 40px;
+  color: black;
+  list-style: armenian;
+  padding: 1rem;
+  margin-left: 10px;
+  text-decoration: overline;
+  font-size: medium;
+}
+.tratamientos ul li:hover {
+  background-color: red;
+}
+
+main .titulo-imagenes-trabajos {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+main .imagenes-trabajos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 3rem;
+}
+main .imagenes-trabajos img {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+main .titulo-principal {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+main .mapa-interactivo {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  padding: 6rem;
+}
+
+body hr {
+  margin: 10px;
+  padding-top: 5px;
+  height: 1px;
+  border-style: dotted;
+  border-color: red;
+}
+
+main .titulo-principal {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+main .consejos {
+  text-align: center;
+  padding: 3rem;
+}
+main .texto1 {
+  display: flex;
+  justify-content: center;
+}
+main .video1 {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+main .texto2 {
+  display: flex;
+  justify-content: center;
+}
+main .vide2 {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding-bottom: 3rem;
+}
+
+main .titulo-principal {
+  display: flex;
+  justify-content: center;
+}
+main .logo-wp {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .numero {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10rem;
+}
+main .numero h2 a {
+  text-decoration: none;
+  color: black;
+  border: 2px double black;
 }
 
 /*# sourceMappingURL=styles.css.map */

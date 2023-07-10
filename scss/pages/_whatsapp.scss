@@ -1,0 +1,25 @@
+main{
+    .titulo-principal{
+        display: flex;
+        justify-content: center;
+    }
+
+    & .logo-wp{
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & .numero{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10rem;
+
+        & h2 a{
+            text-decoration: none;
+            color: black;
+            border: 2px double black;
+        }
+    }
+}

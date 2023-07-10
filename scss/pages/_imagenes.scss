@@ -1,0 +1,19 @@
+main{
+    .titulo-imagenes-trabajos{
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+    }
+
+    .imagenes-trabajos{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding-bottom: 3rem;
+
+        & img{
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+    }
+}

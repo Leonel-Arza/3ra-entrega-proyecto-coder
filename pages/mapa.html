@@ -5,52 +5,135 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="../img/logo.png">
-    <title>Odontologia Integral</title>
+    <link rel="icon" type="image/x-icon" href="../img/logo 3.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
-
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Odontologia Integral</title>
 </head>
 
-<body class="body">
+<body>
 
     <header>
 
-        <div>
-            <h1 id="titulo">Odontologia Integral</h1>
+        <div class="titulo">
+            <h1>Odontologia Integral</h1>
         </div>
 
-        <div>
-            <form>
-                <h6>Ingresar nombre y apellido para la
-                    consulta, le responderemos a la brevedad:</h6>
-                <input type="text" id="nombre" placeholder="Nombre y apellido">
-                <input type="textarea" id="consulta" placeholder="Escriba aqui su consulta">
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpiar">
-            </form>
+        <div class="logo-pagina">
+            <a href="../index.html"><img src="../img/pngwing.com.png" alt=""></a>
         </div>
 
-        <div>
-            <nav>
-                <a href="../index.html">Inicio</a>
-                <a href="../pages/imagenes.html">Galeria de Imagenes</a>
-                <a href="../pages/videos.html">Videos</a>
-                <a href="../pages/mapa.html">Encuentranos</a>
-                <a href="../pages/WhatsApp.html"><button class="btn">Solicitar Turno</button> </a>
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-md bg-body-$bg-color: lavenderblush">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/imagenes.html">Galeria de Imagenes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/videos.html">Videos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/mapa.html">Encuentranos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/whatsapp.html">Solicitar Turno</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
 
     </header>
 
-    <h1>Donde nos ubicamos</h1>
     <hr>
-    <nav>
-        <h1>Mapa del sitio</h1>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d203448.90758581317!2d-93.29632455000001!3d37.1791045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87cf62f745c8983f%3A0x6bfd6cb31e690da0!2sSpringfield%2C%20Misuri%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1685322676172!5m2!1ses-419!2sar"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </nav>
+
+    <main>
+        <div class="titulo-principal">
+            <h1>Mapa del sitio</h1>
+        </div>
+        <div class="mapa-interactivo">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d203448.90758581317!2d-93.29632455000001!3d37.1791045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87cf62f745c8983f%3A0x6bfd6cb31e690da0!2sSpringfield%2C%20Misuri%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1685322676172!5m2!1ses-419!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+
+    <footer>
+
+        <div class="titulo-pie">
+            <h2>Seguinos en redes para enterarte las novedades que tenemos sobre nuestros tratamientos!</h2>
+        </div>
+
+        <form>
+            <input class="cuadro1" type="text" id="nombre" placeholder="Nombre y apellido">
+            <input class="cuadro2" type="textarea" id="consulta" placeholder="Escriba aqui su consulta">
+            <input class="boton1" type="submit" value="Enviar">
+            <input class="boton2" type="reset" value="Limpiar">
+        </form>
+
+        <div class="redes">
+            <div class="logo-instagram">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="../img/logo-nuevo-ig.png" alt="imagen-instagram">
+                </a>
+            </div>
+
+            <div class="logo-whatsapp">
+                <a href="https://www.whatsapp.com/?lang=es" target="_blank">
+                    <img class="logo-whatsapp" src="../img/logo-nuevo-wp.png" alt="imagen whatsapp">
+                </a>
+            </div>
+
+            <div class="logo-twitch">
+                <a href="https://www.twitch.tv/" target="_blank">
+                    <img class="logo-twitch" src="../img/logo-twitch.png" alt="imagen twitch">
+                </a>
+            </div>
+
+            <div class="logo-twitter">
+                <a href="https://twitter.com/" target="_blank">
+                    <img class="logo-twitter" src="../img/logo-nuevo-twitter.png" alt="imagen twitter">
+                </a>
+            </div>
+
+            <div class="logo-youtube">
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img class="logo-youtube" src="../img/logo-nuevo-youtube.png" alt="imagen youtube">
+                </a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <small>&copy; 2023 ODONTOLOGIA INTEGRAL | Todos los derechos reservados | Desarrollo Web: <b>Leonel
+                    Arza</b></small>㊙
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

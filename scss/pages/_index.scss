@@ -1,0 +1,39 @@
+body {
+    background: linear-gradient(to right, rgb(231, 161, 161), rgb(248, 225, 225), rgb(248, 117, 117), );
+}
+
+
+.primer-titulo {
+    background-color: lightgray;
+    color: grey;
+    text-align: center;
+    font-family: $font;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tratamientos {
+    background-image: url(../img/Consultorio.jpeg);
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+
+
+    & ul li {
+        justify-content: start;
+        border-radius: 40px;
+        color: black;
+        list-style: armenian;
+        padding: 1rem;
+        margin-left: 10px;
+        text-decoration: overline;
+        font-size: medium;
+
+        &:hover {
+            background-color: red;
+        }
+
+    }
+}
+

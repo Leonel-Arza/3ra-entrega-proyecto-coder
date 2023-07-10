@@ -1,0 +1,29 @@
+$color: rgb(243, 230, 242);
+$bg-color: lavenderblush;
+$color-btn: black;
+$font: "Comic Sans MS", cursive, sans-serif;
+$font-optional: Verdana, Geneva, Tahoma, sans-serif;
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+
+img {
+    max-width: 100%;
+}

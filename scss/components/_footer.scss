@@ -1,0 +1,61 @@
+footer {
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(255, 255, 255));
+
+    & .titulo-pie {
+        color: whitesmoke;
+        text-align: center;
+
+        & h2 {
+
+            font-size: medium;
+        }
+    }
+
+
+    & .redes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+
+
+        & .logo-instagram {
+            width: 60px;
+            height: 60px;
+        }
+
+        & .logo-whatsapp {
+            width: 60px;
+            height: 60px;
+        }
+
+        & .logo-twitch {
+            width: 45px;
+            height: 45px;
+            margin-left: 3px;
+        }
+
+        & .logo-twitter {
+            width: 45px;
+            height: 45px;
+            margin-left: 8px;
+        }
+
+        & .logo-youtube {
+            width: 45px;
+            height: 45px;
+            margin-left: 12px;
+        }
+    }
+
+
+    & .copyright {
+        text-align: center;
+        font-size: x-small;
+        color: black;
+    }
+
+    & form {
+        text-align: center;
+    }
+}
